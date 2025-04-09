@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Trò chơi "Hãy đoán xem"</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            text-align: center;
+            margin-top: 50px;
+        }
+        input, button {
+            padding: 10px;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+        #result {
+            margin-top: 20px;
+            font-size: 18px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>🎲 Trò chơi "Hãy đoán xem!"</h1>
+    <p>Máy tính đã chọn một số ngẫu nhiên từ <strong>1 đến 10</strong>. Hãy đoán thử!</p>
+
+    <input type="number" id="userGuess" placeholder="Nhập số bạn đoán (1-10)" min="1" max="10">
+    <br>
+    <button onclick="checkGuess()">Đoán</button>
+
+    <p id="result"></p>
+
+    <script src="guess.js"></script>
+</body>
+</html>
